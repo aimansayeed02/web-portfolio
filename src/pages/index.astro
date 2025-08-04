@@ -2,6 +2,7 @@
 ---
 import Navbar from '../components/navbar.astro'
 import '../styles/styles.css'
+import'../components/footer.astro'
 
 ---
 
@@ -21,24 +22,24 @@ import '../styles/styles.css'
 
     <Navbar />
 
-
 <body>
 
     <style>
   .grid {
     display: grid;
+
     place-items:left;
     margin: 0px 60px;
   }
-
   .box {
-    width: 400px;
+    width: 550px;
     aspect-ratio: 6/ 4;
     background: #ffffed;
     transform: rotate(10deg);
     display: flex;
     align-items: center;
     justify-content: center;
+    margin:20px;
   }
 
   .text {
@@ -50,15 +51,21 @@ import '../styles/styles.css'
 
     <div class="grid">
   <div class="box">
-    <p class="font1">Hiii!! Upright Text</div>
-  </div>
    <div class="text">
-
+    <p class="font1">Hiii!! Upright Text</div>
         </p>
-
+</div>
+<div class="cartoon">
+<img src="cartoon01.png" width="500px">
+</div>
 </div>
 
 
+
+
+
+
+<footer />
   </body>
 </html>
 
