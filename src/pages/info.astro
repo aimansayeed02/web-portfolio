@@ -1,2 +1,108 @@
-<p class="font1">Welcome to my little corner of the internet!
+---
+import Navbar from '../components/navbar.astro'
+import '../styles/styles.css'
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aiman's Digital journal</title>
+		<style>
+		@import url("https://use.typekit.net/vkr0nvh.css");
+		</style>
+  </head>
+
+  <body>
+    <Navbar />
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				min-height: 100vh;
+			}
+
+			.layout {
+				display: flex;
+				min-height: 100vh;
+			}
+
+			.left-content {
+				flex: 2;
+				padding: 60px;
+				background: white;
+				display: flex;
+				flex-direction: column;
+				/* justify-content: center; */
+			}
+
+			.right-content {
+				flex: 1;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 60px ;
+			}
+
+			@media (max-width: 768px) {
+				.layout {
+					flex-direction: column;
+				}
+
+				.left-content,
+				.right-content {
+					padding: 40px 20px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="layout">
+
+			<div class="left-content font1">
+				<slot name="left">
+					<h2>Hii there! I’m Aiman -
+a curious mind with a sketchbook heart.</h2>
+<br>
+					<p>I’m a  M.Des Communication Design student, currently riding the colorful wave of learning, experimenting, and turning wild ideas into thoughtful visuals. Whether it's digital illustration, traditional art, or weaving stories through design, I believe creativity should not just look good-it should feel something too.</p>
+						<span style="font-weight: bold; font-style: italic;">
+						My style?</span> A mix of imagination, intention, and a splash of chaos (the good kind). I'm drawn to design that speaks-emotionally, visually, and sometimes, even literally.
+
+I'm always up for new challenges, meaningful collaborations, and passionate feedback sessions over chai <span style="font-style: italic;">(or coffee if that’s your thing ☕).</span>
 </p>
+<div class="para 2">
+	<h2>
+		Education
+	</h2>
+	<p>
+		Delhi Public School<br>
+(2011-2019)<br></p>
+
+<p>
+FDDI(Footwear design and development institute) Hyderabad<br>
+B.DES(footwear design)<br>
+(2019-2023)
+</p>
+<p>
+DAIICT(Dhirubhai Ambani Institute of Information and Communication Technology)<br>
+M.DES(communication design)<br>
+(2024-2026)
+	</p>
+</div>
+				</slot>
+			</div>
+			<div class="right-content">
+				<slot name="right">
+					<img src="profilepic.png" width="500px">
+
+				</slot>
+			</div>
+		</div>
+	</body>
+</html>
