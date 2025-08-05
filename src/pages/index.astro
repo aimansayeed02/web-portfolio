@@ -17,36 +17,45 @@ import'../components/footer.astro'
   </head>
 
     <Navbar />
+  <body>
 
-<body>
+
+
 
     <style>
+
+  .background {
+  background-image: url('backgroundimg.png');
+  background-size: cover;}
+
+
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin: 0px 60px;
+    padding: 5px;
   }
   .box {
     width: 550px;
-    aspect-ratio: 6/ 4;
+    aspect-ratio: 7/ 4;
     background: #ffffed;
-    transform: rotate(10deg);
+    transform: rotate(-10deg);
     display: flex;
     align-items: center;
     justify-content: center;
-    margin:20px;
+    margin-left:100px;
+    margin-top:120px;
   }
   .text {
-    transform: rotate(-10deg);
+    transform: rotate(10deg);
     font-size: 1rem;
     margin : 0px 30px;
   }
   .cartoon{
-    transform: rotate(10deg)
-  }
-  .cartoon:hover {
-    transition: transform 0.3s ease;
     transform: rotate(10deg);
+    display: flex;
+    justify-content:center;
+
   }
 
 
@@ -56,14 +65,13 @@ import'../components/footer.astro'
   <div class="box">
    <div class="text">
     <p class="font1">Welcome to my little corner of the internet!
-
-transform: rotate(10deg)       I’m in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy.</p>
+      I’m in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy.</p>
 <p class="font1">
 Let’s make something meaningful (and maybe a little magical) together ✨</div>
         </p>
 </div>
 <div class="cartoon">
-<img src="cartoon01.png" width="480px">
+<img src="cartoonimg01.png" width="260px">
 </div>
 </div>
 
@@ -73,6 +81,7 @@ Let’s make something meaningful (and maybe a little magical) together ✨</div
 
 
 <footer />
+</div>
   </body>
 </html>
 
