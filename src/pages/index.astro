@@ -13,11 +13,7 @@ import'../components/footer.astro'
     <title>Aiman's digital journal</title>
 		<style>
 		@import url("https://use.typekit.net/vkr0nvh.css");
-
-
-
 		</style>
-
   </head>
 
     <Navbar />
@@ -27,8 +23,7 @@ import'../components/footer.astro'
     <style>
   .grid {
     display: grid;
-
-    place-items:left;
+    grid-template-columns: 1fr 2fr;
     margin: 0px 60px;
   }
   .box {
@@ -41,30 +36,34 @@ import'../components/footer.astro'
     justify-content: center;
     margin:20px;
   }
-
   .text {
     transform: rotate(-10deg);
-    font-family: sans-serif;
     font-size: 1rem;
-    margin-left: 40px;
+    margin : 0px 30px;
   }
+  .cartoon{
+    transform: rotate(10deg)
+  }
+  .cartoon:hover {
+    transition: transform 0.3s ease;
+    transform: rotate(10deg);
+  }
+
+
 </style>
 
     <div class="grid">
   <div class="box">
    <div class="text">
-    <p class="font1">Hiii!!Welcome to my little corner of the internet!
+    <p class="font1">Welcome to my little corner of the internet!
 
-       I’m someone who gets way too excited about color palettes, quirky typefaces, and ideas that spark emotion. Whether it's through digital illustrations, hand-drawn art, or storytelling-infused design, I love crafting visuals that don’t just look good—but feel something too.
-       
-
-Right now, I’m in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy. I believe in the power of design to connect, question, and delight—and I’m always up for new collabs, feedback, or just geeking out over good design.
+transform: rotate(10deg)       I’m in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy.</p>
 <p class="font1">
 Let’s make something meaningful (and maybe a little magical) together ✨</div>
         </p>
 </div>
 <div class="cartoon">
-<img src="cartoon01.png" width="500px">
+<img src="cartoon01.png" width="480px">
 </div>
 </div>
 
