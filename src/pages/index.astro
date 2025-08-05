@@ -3,6 +3,8 @@
 import Navbar from '../components/navbar.astro'
 import '../styles/styles.css'
 import'../components/footer.astro'
+import Button from'../components/aboutbutton.astro'
+
 
 ---
 
@@ -10,26 +12,15 @@ import'../components/footer.astro'
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aiman's digital journal</title>
+    <title>Aiman's Digital journal</title>
 		<style>
 		@import url("https://use.typekit.net/vkr0nvh.css");
 		</style>
   </head>
 
-    <Navbar />
   <body>
-
-
-
+    <Navbar />
     <style>
-
-      .body{
-        padding:0px 50px;
-      }
-
-
-
-
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -60,28 +51,28 @@ import'../components/footer.astro'
   }
   #walkingimg{
     padding-left: 30px;
-    height:200px;
+    margin-top: -140px;
 
   }
 
 
 </style>
 
-
     <div class="grid">
   <div class="box">
    <div class="text">
     <p class="font1">Welcome to my little corner of the internet!
-      I’m in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy.</p>
-<p class="font1">
+      I’m in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy.<br>
+      <span style="font-weight: bold; font-style: italic;">
 Let’s make something meaningful (and maybe a little magical) together ✨</div>
-        </p>
+        </p></span>
 </div>
 <div class="cartoon">
 <img src="cartoonimg01.png" width="260px">
 </div>
 <div id="walkingimg" >
   <img src="walkingimg.png" width="440px">
+<Button />
 </div>
 </div>
 
