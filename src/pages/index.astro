@@ -21,19 +21,20 @@ import'../components/footer.astro'
 
 
 
-
     <style>
 
-  .background {
-  background-image: url('backgroundimg.png');
-  background-size: cover;}
+      .body{
+        padding:0px 50px;
+      }
+
 
 
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 5px;
+    grid-template-rows: 1fr 2fr;
+    padding: 40px;
   }
   .box {
     width: 550px;
@@ -44,12 +45,12 @@ import'../components/footer.astro'
     align-items: center;
     justify-content: center;
     margin-left:100px;
-    margin-top:120px;
+    margin-top:40px;
   }
   .text {
     transform: rotate(10deg);
     font-size: 1rem;
-    margin : 0px 30px;
+    margin : 60px 30px;
   }
   .cartoon{
     transform: rotate(10deg);
@@ -57,9 +58,15 @@ import'../components/footer.astro'
     justify-content:center;
 
   }
+  #walkingimg{
+    padding-left: 30px;
+    height:200px;
+
+  }
 
 
 </style>
+
 
     <div class="grid">
   <div class="box">
@@ -73,7 +80,22 @@ Let’s make something meaningful (and maybe a little magical) together ✨</div
 <div class="cartoon">
 <img src="cartoonimg01.png" width="260px">
 </div>
+<div id="walkingimg" >
+  <img src="walkingimg.png" width="440px">
 </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
