@@ -9,13 +9,17 @@ import '../styles/styles.css'
   <div class="nav-container">
 
     <ul class="nav-links">
-      <li><a href="/">Work</a></li>
-      <li><a href="/contact">fun</a></li>
+      <!-- <li><a href="/fun">fun</a></li> -->
+
+      <a href="/" class="contact">
+    <img src="homeicon.svg" alt="home" class="home-img" width="50px"; />
+  </a>
     </ul>
     <a href="/" class="logo">
-    <img src={logoSrc} alt={alt} width="250px" />
-  </a>
-  <a href="/" class="contact">
+    <img src={logoSrc} alt={alt} width="250px" /></a>
+
+
+  <a href="/contact" class="contact">
     <img src="contactimg.png" alt="conatctme" class="contact-img" width="200px"; />
   </a>
 
@@ -35,7 +39,7 @@ import '../styles/styles.css'
 
   .nav-container {
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-between;
     align-items: center;
     position: sticky;
     margin:50px;
@@ -43,7 +47,7 @@ import '../styles/styles.css'
     padding: 10px 40px;
     border-radius:40px;
     height: 54px;
-    font-size: 26px;
+    font-size: 20px;
 
 
   }
@@ -63,7 +67,7 @@ import '../styles/styles.css'
   }
 
   .nav-links a:hover {
-    color: #3c5579;
+    color: #275daa;
   }
 
 </style>
