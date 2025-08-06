@@ -24,8 +24,8 @@ import Button from '../components/aboutbutton.astro'
   alt="My Website Logo"
  />
 
-
     <style>
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -59,7 +59,12 @@ import Button from '../components/aboutbutton.astro'
     margin-top: -140px;
 
   }
+  #blue2:hover{
+    transform: rotate(10deg);
+    transition: transform 0.9s ease;
 
+
+  }
 
 </style>
 
@@ -78,11 +83,17 @@ Let’s make something meaningful (and maybe a little magical) together ✨</spa
   <img src="walkingimg.png" width="440px">
 <Button />
 </div>
+<div class="image-wrapper">
+  
+  <img id="blue2"src="painiting-button.png" width="440px">
+
+
+
+
+
+
+
 </div>
-
-
-
-
 <Footer />
 </div>
   </body>
