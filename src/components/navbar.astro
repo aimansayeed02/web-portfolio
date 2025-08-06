@@ -1,6 +1,6 @@
 
 ---
-// No props needed for now
+const { logoSrc = "/logo-default.png", alt = "Site Logo", linksLeft = [], linksRight = [] } = Astro.props;
 import '../styles/styles.css'
 ---
 
@@ -13,7 +13,7 @@ import '../styles/styles.css'
       <li><a href="/contact">fun</a></li>
     </ul>
     <a href="/" class="logo">
-    <img src="logo01.png" alt="Site Logo" class="logo-img" width="250px"; />
+    <img src={logoSrc} alt={alt} width="250px" />
   </a>
   <a href="/" class="contact">
     <img src="contactimg.png" alt="conatctme" class="contact-img" width="200px"; />
