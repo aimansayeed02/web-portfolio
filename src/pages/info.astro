@@ -14,8 +14,7 @@ const { title } = Astro.props;
 		@import url("https://use.typekit.net/vkr0nvh.css");
 		</style>
   </head>
-
-  <body>
+	<body>
     <Navbar
   logoSrc="/logoaboutpage.png"
   alt="My Website Logo"
@@ -40,15 +39,14 @@ const { title } = Astro.props;
 			.left-content {
 				flex: 2;
 				padding: 70px;
-				background: white;
 				display: flex;
 				flex-direction: column;
-				/* justify-content: center; */
+				justify-content: center;
 			}
 
 			.right-content {
 				flex: 1;
-				display: grid;
+				display: flex;
 				align-items: center;
 				justify-content: center;
 				padding: 70px ;
@@ -60,38 +58,25 @@ const { title } = Astro.props;
 
 			}
 
-
 			@media (max-width: 768px) {
 				.layout {
 					flex-direction: column;
 				}
-
 				.left-content,
 				.right-content {
 					padding: 40px 20px;
 				}
-
-
-
-
-
-
-
-
-
-
-
+			}
 
 		</style>
+
 	</head>
-	<body>
+
 		<div class="layout">
 
 			<div class="left-content font1">
 				<slot name="left">
-					<h2>Hii there! I’m Aiman -
-a curious mind with a sketchbook heart.</h2>
-<br>
+					<h2>Hii there! I’m Aiman - a curious mind with a sketchbook heart.</h2><br>
 					<p>A M.Des Communication Design student, currently riding the colorful wave of learning, experimenting, and turning wild ideas into thoughtful visuals. Whether it's digital illustration, traditional art, or weaving stories through design, I believe creativity should not just look good-it should feel something too.</p>
 						<span style="font-weight: bold; font-style: italic;text-align: center;">
 						My style?</span> A mix of imagination, intention, and a splash of chaos (the good kind). I'm drawn to design that speaks-emotionally, visually, and sometimes, even literally.
@@ -127,6 +112,7 @@ M.DES(communication design)<br>
 	</p>
 </div>
 				</slot>
+
 			</div>
 			<div class="right-content font1">
 				<slot name="right">
@@ -147,12 +133,6 @@ M.DES(communication design)<br>
 							<img src="appsimg.png" width="200px">
 							</p>
 						</div>
-
-
-
-
-
-
 
 
 
