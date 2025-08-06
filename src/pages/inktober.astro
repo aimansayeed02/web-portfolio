@@ -33,17 +33,20 @@ const { title } = Astro.props;
 
   .left-content {
 		flex: 2;
-		padding: 70px;
+		padding:100px;
+    padding-top: 40px;
 		display: flex;
 		flex-direction: column;
-			justify-content: center;
+		/* justify-content: center; */
 			}
       .right-content {
 				flex: 1;
-				display: flex;
+				/* display: flex; */
 				align-items: center;
-				justify-content: center;
-				padding: 70px ;
+				padding: 100px ;
+        padding-top: 60px;
+
+
 			}
 
       .text-container{
@@ -57,7 +60,7 @@ const { title } = Astro.props;
 
 				.left-content,
 				.right-content {
-					padding: 0px 20px;
+					padding: 40px 20px;
 				}
 			}
 
@@ -65,15 +68,16 @@ const { title } = Astro.props;
 </style>
 
 <div class="inkbox">
-<img src="inktoberhead.png" height="65px" >
+<img src="inktoberhead.png" height="90px" >
 </div>
+
 <div class="layout">
 <div class="left-content font1">
 				<slot name="left">
 
         <h2>What's Inktober?</h2>
         <br>
-					<p>Inktober is a month-long drawing challenge held every October, where artists create one ink-based drawing each day. It was started by Jake Parker in 2009 to build better drawing habits, and it's now become a global creative tradition!
+					<p>Inktober is a month-long drawing challenge held every October, where artists create one ink-based drawing each day. It was started by Jake Parker in 2009 to build better drawing habits, and it's now become a global creative tradition!<br><br>
 The rules are simple: draw something in ink (you can follow a prompt list or go with your own ideas), and share it. It's all about consistency, experimentation, and letting your imagination run wild — whether you're sketching spooky creatures, dreamy landscapes, or quirky characters.
 Over the years, Inktober has become a personal ritual for me. I love looking back at how my style has evolved, and how each October brought its own themes and moods.<br>
 <span style="font-weight: bold; font-style: italic;text-align: center;">
@@ -84,7 +88,7 @@ In this collection, I've shared artworks from different years - a little timelin
         <div class="right-content font1">
 
 				<slot name="right">
-          <img src="inkcover.png" width="400px">
+          <img src="inkcover.png" width="300px">
 
         </slot>
 
