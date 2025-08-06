@@ -50,6 +50,13 @@ const { title } = Astro.props;
 				padding: 70px ;
 			}
 
+			.text-container{
+					 display: grid;
+					 grid-template-rows: repeat(1fr, 1fr);
+
+			}
+
+
 			@media (max-width: 768px) {
 				.layout {
 					flex-direction: column;
@@ -60,25 +67,12 @@ const { title } = Astro.props;
 					padding: 40px 20px;
 				}
 
-				/* #texttop{
-				 display: grid;
-         grid-template-columns:(1fr ,1fr);
-         gap: 10px;
-				 margin: auto; */
-				}
-/*
-				  #texttop{
-					display: flex;
-					flex-direction:unset;
 
-				 } */
 
-					/* #a-part{
-						display: block;
-					}
-					#b-part{
-						display: block;
-					} */
+
+
+
+
 
 
 
@@ -135,7 +129,8 @@ M.DES(communication design)<br>
 
 					<img src="profilepic.png" width="500px">
 
-					<div id="texttop">
+					<div class="text-container">
+
 					<div id="a-part">
 						<h2>Good at</h2>
 						<p>Research<br>Design thinking<br>Visualisation<br>Storyboarding
@@ -145,10 +140,7 @@ M.DES(communication design)<br>
 						<h2>Keen on</h2>
 						<p>Exploaring<br>Adapting<br>Learning<br>Developing</p>
 							</div>
-							</div>
 							<img src="appsimg.png" width="200px">
-
-
 							</p>
 						</div>
 

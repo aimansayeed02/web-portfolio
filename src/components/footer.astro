@@ -6,32 +6,44 @@
     <div class="footer-links">
       <a href="/contact">contact</a>
       <a href="/work">work</a>
-      <a href="/info">info</a>
-      <a href="/fun">fun</a>
     </div>
-    <img src="logobottom.svg" alt="Logo" class="footer-logo" />
+    <a href="/" class="logo">
+    <img src="logobottom.svg" alt="Logo" class="logo-img" height="60px" />
+    </a>
+    
   </div>
 </footer>
 
 <style>
   .footer {
     background-color: #bdd9f4;
-    padding: 10px 40px;
+    padding: 20px 40px;
     border-radius:40px;
+
+
   }
 
   .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
   }
 
   .footer-links {
     display: flex;
-    gap: 20px;
+    gap: 30px;
   }
 
   .footer-links a {
     text-decoration: none;
     color: #333;
     font-family: all-round-gothic, sans-serif;}
+
+
+    .logo:hover {
+    transition: transform 0.7s ease;
+    transform: rotate(13deg);
+
+  }
+
