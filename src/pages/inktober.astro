@@ -1,0 +1,91 @@
+---
+import Navbar from '../components/navbar.astro'
+import '../styles/styles.css'
+import Footer from '../components/footer.astro'
+const { title } = Astro.props;
+---
+<style>
+		@import url("https://use.typekit.net/vkr0nvh.css");
+		</style>
+<Navbar
+  logoSrc="/inktoberlogo.png"
+  alt="My Website Logo"
+ />
+
+ <style>
+body {
+
+      justify-content: center;
+      align-items: center;
+}
+.inkbox{
+   padding: 2rem;
+      text-align: center;
+
+}
+.text-container{
+		display: grid;
+		grid-template-rows: repeat(1fr, 1fr);}
+
+  .left-content {
+		flex: 2;
+		padding: 70px;
+		display: flex;
+		flex-direction: column;
+			justify-content: center;
+			}
+
+      @media (max-width: 768px) {
+				.layout {
+					flex-direction: column;
+				}
+				.left-content,
+				.right-content {
+					padding: 40px 20px;
+				}
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+<div class="inkbox">
+<img src="inktoberhead.png" height="65px" >
+<div class="layout">
+<div class="left-content font1">
+				<slot name="left">
+
+        <h2>What's Inktober?</h2>
+        <br>
+					<p>Inktober is a month-long drawing challenge held every October, where artists create one ink-based drawing each day. It was started by Jake Parker in 2009 to build better drawing habits, and it's now become a global creative tradition!
+The rules are simple: draw something in ink (you can follow a prompt list or go with your own ideas), and share it. It's all about consistency, experimentation, and letting your imagination run wild — whether you're sketching spooky creatures, dreamy landscapes, or quirky characters.
+Over the years, Inktober has become a personal ritual for me. I love looking back at how my style has evolved, and how each October brought its own themes and moods.
+
+In this collection, I've shared artworks from different years
+— a little timeline of my inky journey, full of scribbles, surprises, and lots of late-night drawing energy.
+</p>
+        </slot>
+        </div>
+        <div class="right-content font1">
+				<slot name="right">
+          <img src="inkcover.png" width="500px">
+
+        </slot>
+
+
+
+
+
+
+</div>
+</div>
+<Footer />
