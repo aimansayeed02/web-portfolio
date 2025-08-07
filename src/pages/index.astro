@@ -14,9 +14,8 @@ import Button from '../components/aboutbutton.astro'
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aiman's Digital journal</title>
     <style>
-    @import url("https://use.typekit.net/vkr0nvh.css");
-    </style>
-		 <!-- <link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css"> -->
+    @import url("https://use.typekit.net/vkr0nvh.css");</style>
+		 <link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css">
   </head>
 
   <body>
@@ -29,15 +28,17 @@ import Button from '../components/aboutbutton.astro'
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1fr 1.5fr;
     padding: 40px;
+    padding-bottom: 0%;
   }
   .box {
     width: 550px;
     aspect-ratio: 7/ 4;
     background: #ffffed;
     transform: rotate(-10deg);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,6 +50,7 @@ import Button from '../components/aboutbutton.astro'
     font-size: 1rem;
     margin : 60px 30px;
   }
+
   .cartoon{
     transform: rotate(10deg);
     display: flex;
@@ -57,7 +59,7 @@ import Button from '../components/aboutbutton.astro'
   }
   #walkingimg{
     padding-left: 30px;
-    margin-top: -140px;
+    margin-top: -150px;
 
   }
 
@@ -83,8 +85,6 @@ import Button from '../components/aboutbutton.astro'
     position: absolute;
     top: 220px;
     left: 40px;
-
-
   }
   #blue2{
     object-fit: cover;
@@ -100,15 +100,16 @@ import Button from '../components/aboutbutton.astro'
   }
 
 </style>
-
     <div class="grid">
   <div class="box">
    <div class="text">
     <p class="font1">Welcome to my little corner of the internet!
-      I'm in full-on sponge mode: learning, unlearning, trying new things, and building a practice that blends imagination with thoughtful strategy.<br>
+      Aiman this side!What you'll find here is- fun art stuff, some design projects, learning aspect of how i've developed with art and exploring different medium!
+       <br>
       <span style="font-weight: bold; font-style: italic;">
-Let's make something meaningful (and maybe a little magical) together✨</span></p></div>.
-</div>
+        Aand some music suggestions,(more like what all music ive explored so far!)
+</p></div> </div>
+
 <div class="cartoon">
 <img src="cartoonimg01.png" width="260px">
 </div>
@@ -116,8 +117,8 @@ Let's make something meaningful (and maybe a little magical) together✨</span><
   <img src="walkingimg.png" width="440px">
 <Button />
 </div>
-<div class="image-wrapper">
 
+<div class="image-wrapper">
   <img id="blue1"src="musicbutton.png" alt="background image" width="340px">
   <a href="/artstuff" class="logo">
   <img id="blue2"src="funartbutton.png" alt="top-image" width="350px">
@@ -125,9 +126,11 @@ Let's make something meaningful (and maybe a little magical) together✨</span><
   <a href="/work" class="logo">
   <img id="blue3"src="projectbutton.png" alt="background image" width="340px"></a>
 </div>
-
 </div>
+
+
 <Footer />
+</div>
   </body>
 </html>
 
