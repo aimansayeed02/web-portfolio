@@ -35,6 +35,8 @@ const { title } = Astro.props;
 			.left-content {
 				flex: 2;
 				padding: 70px;
+				padding-left:80px;
+				padding-bottom: 0px;;
 				display: flex;
 				flex-direction: column;
 				justify-content: center;
@@ -46,8 +48,8 @@ const { title } = Astro.props;
 				/* display: flex; */
 				align-items: center;
 				justify-content: center;
-				padding: 70px ;
-				padding-left: 0px;;
+				padding-right: 70px ;
+
 			}
 
 			.text-container{
@@ -62,11 +64,22 @@ const { title } = Astro.props;
 				align-items: center;
 				margin: 40px;
 			}
+			#blue3{
+				transform: rotate(20deg);
+
+			}
 
 			#blue3:hover{
      transform: rotate(10deg);
      transition: transform 0.9s ease;
       }
+			#gifplacement{
+				display: flex;
+				 justify-content: center;
+
+			}
+
+
 
 			/* .imgagealign{
 				display:flex;
@@ -102,7 +115,6 @@ const { title } = Astro.props;
 I'm always up for new challenges, meaningful collaborations, and passionate feedback sessions over chai <span style="font-style: italic;">(or coffee if that's your thing ☕)
 	</span>
 </p>
-
 <div class="para 2">
 	<br>
 	<h2>
@@ -139,7 +151,6 @@ M.DES(communication design)<br>
 				<slot name="right">
 
 					<img src="profilepic.png" width="500px">
-
 					<div class="text-container">
 
 					<div id="a-part">
@@ -160,10 +171,12 @@ M.DES(communication design)<br>
 							<a href="/work" class="logo">
              <img id="blue3"src="projectbutton.png" alt="background image" width="270px"> </a>
 						 </div>
-
-
-				</slot>
+						</slot>
 			</div>
+		</div>
+		<div id="gifplacement">
+		<img src="infopagegif.gif" height="200px">
+		<img src="infopagegif.gif" height="200px">
 		</div>
 		<Footer />
 	</body>
