@@ -31,25 +31,24 @@ const { title } = Astro.props;
 
    .layout {
 				display: flex;
-				min-height: 100vh;
+				min-height: 50vh;
 			}
 
   .left-content {
 		flex: 2;
-		padding:140px;
+		padding-bottom:0px;
     padding-top: 40px;
-		padding-right:40px;
+		padding-left:140px;
+		padding-right:20px;
 		display: flex;
-		flex-direction: column;
+		flex-direction: column; }
 
-			}
       .right-content {
 				flex: 1;
-				/* display: flex; */
 				align-items: center;
-				padding: 140px ;
+				padding-bottom:0px;
         padding-top: 60px;
-				padding-left:0%
+				padding-left:50px;
 
 			}
 			.yearjournal{
@@ -109,13 +108,13 @@ In this collection, I've shared artworks from different years - a little timelin
 
 
 
-
-				<div class="yearjournal">
+				<div class="yearjournal font1">
 
 					<Journal src="/public/journalimg.png"alt="2025" text="Soon to arrive 2025"/>
 					<Journal src="/public/journalimg.png"alt="2024" text="2024"/>
-					<Journal src="/public/journalimg.png"alt="2025" text="2023"/>
-					<Journal src="/public/journalimg.png"alt="2024" text="2022"/>
+					<Journal src="/public/journalimg.png"alt="2023" text="2023"/>
+					<Journal src="/public/journalimg.png"alt="2022" text="2022"/>
+					<Journal src="/public/journalimg.png"alt="2021" text="2021"/>
 
 
 
