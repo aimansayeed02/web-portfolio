@@ -38,9 +38,10 @@ const { title } = Astro.props;
 		flex: 2;
 		padding:140px;
     padding-top: 40px;
+		padding-right:40px;
 		display: flex;
 		flex-direction: column;
-		/* justify-content: center; */
+
 			}
       .right-content {
 				flex: 1;
@@ -48,6 +49,13 @@ const { title } = Astro.props;
 				align-items: center;
 				padding: 140px ;
         padding-top: 60px;
+				padding-left:0%
+
+			}
+			.yearjournal{
+				display: flex;
+				align-items: center;
+				padding: 80px ;
 
 			}
 
@@ -96,27 +104,21 @@ In this collection, I've shared artworks from different years - a little timelin
           <img src="inkcover.png" width="300px">
 
         </slot>
-
-
-        
-        <Journal
-  src="/public/journalimg.png"
-  alt="2025"
-  text="Soon to arrive 2025"
-/>
-
-<Journal
-  src="/public/journalimg.png"
-  alt="2024"
-  text="2024"
-/>
+				</div>
+				</div>
 
 
 
 
+				<div class="yearjournal">
+
+					<Journal src="/public/journalimg.png"alt="2025" text="Soon to arrive 2025"/>
+					<Journal src="/public/journalimg.png"alt="2024" text="2024"/>
+					<Journal src="/public/journalimg.png"alt="2025" text="2023"/>
+					<Journal src="/public/journalimg.png"alt="2024" text="2022"/>
 
 
 
-</div>
-</div>
+				</div>
+
 <Footer />
