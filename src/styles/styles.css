@@ -16,6 +16,7 @@
   body {
 				min-height: 100vh;
 				background-image:url(/public/background.jpg);
+				overflow-x: hidden;
 			}
 
       @media (max-width: 768px)
