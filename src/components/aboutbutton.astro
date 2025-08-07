@@ -17,7 +17,19 @@ const { href = "/info"} = Astro.props;
     color: #000000;
     margin: 0 auto;
   }
-  
+  a:hover{
+    transition: transform 0.7s ease;
+    animation: wiggle 0.8s ease-in-out;
+}
+  @keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  20% { transform: rotate(-5deg); }
+  40% { transform: rotate(5deg); }
+  60% { transform: rotate(-4deg); }
+  80% { transform: rotate(4deg); }
+
+}
+
 
 </style>
 

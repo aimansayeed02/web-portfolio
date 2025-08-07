@@ -28,8 +28,8 @@ import Button from '../components/aboutbutton.astro'
 
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr 1.5fr;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1.5fr; */
     padding: 40px;
     padding-bottom: 0%;
   }
@@ -60,7 +60,6 @@ import Button from '../components/aboutbutton.astro'
   #walkingimg{
     padding-left: 30px;
     margin-top: -150px;
-
   }
 
   #blue2:hover{
@@ -77,25 +76,30 @@ import Button from '../components/aboutbutton.astro'
   }
   .image-wrapper {
   position: relative;
-  width: 100px;
-  height: 400px;
+  width: 800px;
+  height: 300px;
+
 }
  #blue1{
     object-fit: contain;
     position: absolute;
-    top: 220px;
-    left: 40px;
+    left: 400px;
+    bottom:10px;
   }
   #blue2{
-    object-fit: cover;
-    left: 65px;
+    /* object-fit: cover; */
+    position: absolute;
+    object-fit: contain;
+    left: 150px;
+    bottom:10px;
 
   }
   #blue3{
     object-fit: contain;
     position: absolute;
-    top: 450px;
-    left: 50px;
+    bottom: 10px;
+    left: 680px;
+
 
   }
 
@@ -111,14 +115,17 @@ import Button from '../components/aboutbutton.astro'
 </p></div> </div>
 
 <div class="cartoon">
-<img src="cartoonimg01.png" width="260px">
+<img src="cartoonimg01.png" width="350px">
 </div>
+</div>
+
 <div id="walkingimg" >
   <img src="walkingimg.png" width="440px">
 <Button />
 </div>
 
 <div class="image-wrapper">
+
   <img id="blue1"src="musicbutton.png" alt="background image" width="340px">
   <a href="/artstuff" class="logo">
   <img id="blue2"src="funartbutton.png" alt="top-image" width="350px">
@@ -130,7 +137,6 @@ import Button from '../components/aboutbutton.astro'
 
 
 <Footer />
-</div>
   </body>
 </html>
 
