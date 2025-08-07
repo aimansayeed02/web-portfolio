@@ -14,9 +14,7 @@ const { title } = Astro.props;
   logoSrc="/inktoberlogo.png"
   alt="My Website Logo"
  />
-
  <style>
-
 
 * {
 				margin: 0;
@@ -49,12 +47,22 @@ const { title } = Astro.props;
 				padding-bottom:0px;
         padding-top: 60px;
 				padding-left:50px;
+				padding-right:140px;
 
 			}
 			.yearjournal{
 				display: flex;
 				align-items: center;
-				padding: 80px ;
+				justify-content: center;
+				padding: 40px ;
+
+			}
+			.yearjournal2{
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding: 40px ;
+				padding-top:0%;
 
 			}
 
@@ -100,7 +108,7 @@ In this collection, I've shared artworks from different years - a little timelin
         <div class="right-content font1">
 
 				<slot name="right">
-          <img src="inkcover.png" width="300px">
+          <img src="inkcover.png" width="350px">
 
         </slot>
 				</div>
@@ -113,6 +121,9 @@ In this collection, I've shared artworks from different years - a little timelin
 					<Journal src="/public/journalimg.png"alt="2025" text="Soon to arrive 2025"/>
 					<Journal src="/public/journalimg.png"alt="2024" text="2024"/>
 					<Journal src="/public/journalimg.png"alt="2023" text="2023"/>
+					</div>
+
+					<div class="yearjournal2 font1">
 					<Journal src="/public/journalimg.png"alt="2022" text="2022"/>
 					<Journal src="/public/journalimg.png"alt="2021" text="2021"/>
 
