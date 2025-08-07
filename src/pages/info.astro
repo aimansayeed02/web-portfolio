@@ -42,15 +42,27 @@ const { title } = Astro.props;
 
 			.right-content {
 				flex: 1;
-				display: flex;
+				/* display: flex; */
 				align-items: center;
 				justify-content: center;
 				padding: 70px ;
 			}
 
 			.text-container{
-					 display: grid;
-					 grid-template-rows: repeat(1fr, 1fr); }
+				/* display:grid;
+        grid-template-columns: repeat(1fr, 1fr);
+				column-gap: 30px; */
+				display: flex;
+				 justify-content:flex-start;
+				 gap: 40px;
+
+
+			}
+			#ch-postit{
+				display: block;
+				margin:30px;
+
+			}
 
 			@media (max-width: 768px) {
 				.layout {
@@ -62,27 +74,30 @@ const { title } = Astro.props;
 				}
 			}
 
-		</style>
 
+		</style>
 	</head>
 
 		<div class="layout">
 
 			<div class="left-content font1">
 				<slot name="left">
-					<h2>Hii there! I’m Aiman - a curious mind with a sketchbook heart.</h2><br>
+					<h2>Hii there! <br>
+						I’m Aiman - a curious mind with a sketchbook heart.</h2><br>
 					<p>A M.Des Communication Design student, currently riding the colorful wave of learning, experimenting, and turning wild ideas into thoughtful visuals. Whether it's digital illustration, traditional art, or weaving stories through design, I believe creativity should not just look good-it should feel something too.</p>
 						<span style="font-weight: bold; font-style: italic;text-align: center;">
 						My style?</span> A mix of imagination, intention, and a splash of chaos (the good kind). I'm drawn to design that speaks-emotionally, visually, and sometimes, even literally.
 
-I'm always up for new challenges, meaningful collaborations, and passionate feedback sessions over chai <span style="font-style: italic;">(or coffee if that’s your thing ☕)
+I'm always up for new challenges, meaningful collaborations, and passionate feedback sessions over chai <span style="font-style: italic;">(or coffee if that's your thing ☕)
 	</span>
 </p>
 
 <div class="para 2">
+	<br>
 	<h2>
 		Education
 	</h2>
+	<br>
 	<p>
 		Delhi Public School<br>
 (2011-2019)<br></p>
@@ -96,12 +111,13 @@ DAIICT(Dhirubhai Ambani Institute of Information and Communication Technology)<b
 M.DES(communication design)<br>
 (2024-2026)
 	</p>
+	<br>
 	<h2>
 		Experience
 	</h2>
+	<br>
 	<p>
 		From bold posters to quirky characters, my freelance design journey (2023–2024) was all about turning big ideas into eye-catching visuals—posters, prints, animatics, logos, you name it! Before that, I sketched kicks and played with materials as a Graphic Footwear Intern at Apollo (2022), bringing fresh designs from paper to prototype. And way back in 2021, I jazzed up RSVI’s social media with snappy posts and banners that packed a punch for their cause.
-
 
 	</p>
 </div>
@@ -117,18 +133,18 @@ M.DES(communication design)<br>
 
 					<div id="a-part">
 						<h2>Good at</h2>
+						<br>
 						<p>Research<br>Design thinking<br>Visualisation<br>Storyboarding
 							</div>
 
 							<div id="b-part">
 						<h2>Keen on</h2>
+						<br>
 						<p>Exploaring<br>Adapting<br>Learning<br>Developing</p>
-							</div>
-							<img src="appsimg.png" width="200px">
+							</div></div>
+
+							<img id="ch-postit" src="appsimg.png" width="200px">
 							</p>
-						</div>
-
-
 
 
 				</slot>
