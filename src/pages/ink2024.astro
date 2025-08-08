@@ -16,10 +16,32 @@ const { title } = Astro.props;
       }
       .text{
         font-size: 1rem;
-        margin : 60px 30px;
-         padding: 70px;
+        /* margin : 60px 30px; */
+        padding-right:250px;
+        padding-left:150px;
 
       }
+      .image-days{
+        column-count: 3;
+       column-gap: 15px;
+       padding:28px;
+}
+.masonry-item {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .image-days{
+      column-count: 2;
+       column-gap: 15px;
+       padding:28px;
+}
+}
+
 
 		</style>
 
@@ -40,44 +62,44 @@ For Inktober 2024, I explored illustrations inspired by nature and brought my or
 also used a square sketchbook this year! so will have a lot of square and long landscape looking illustrartions!
       </p>
     </div>
-    <div class="imgage-days">
-      <img src="inktober24/Frame 1.png" height=550px;>
-      <img src="inktober24/Frame 2.png" height=550px;>
-      <img src="inktober24/Frame 4.png" height=550px;>
-      <img src="inktober24/Frame 5.png" height=550px;>
-      <img src="inktober24/Frame 6.png" height=550px;>
-      <img src="inktober24/Frame 7.png" height=550px;>
-      <img src="inktober24/Frame 8.png" height=550px;>
-      <img src="inktober24/Frame 9.png" height=850px;>
-      <img src="inktober24/Frame 10.png" height=550px;>
-      <img src="inktober24/Frame 11.png" height=550px;>
-      <img src="inktober24/Frame 12.png" height=550px;>
-      <img src="inktober24/Frame 13(1).png" height=550px;>
-      <img src="inktober24/Frame 14.png" height=550px;>
-      <img src="inktober24/Frame 15.png" height=550px;>
-      <img src="inktober24/Frame 16(1).png" height=550px;>
-      <img src="inktober24/Frame 17.png" height=550px;>
-      <img src="inktober24/Frame 18(1).png" height=550px;>
-      <img src="inktober24/Frame 19.png" height=550px;>
-      <img src="inktober24/Frame 20.png" height=550px;>
-      <img src="inktober24/Frame 21.png" height=550px;>
-      <img src="inktober24/Frame 22.png" height=550px;>
-      <img src="inktober24/Frame 23.png" height=550px;>
-      <img src="inktober24/Frame 24.png" height=550px;>
-      <img src="inktober24/Frame 25.png" height=550px;>
-      <img src="inktober24/Frame 26.png" height=550px;>
-      <img src="inktober24/Frame 27.png" height=550px;>
-      <img src="inktober24/Frame 28.png" height=550px;>
-      <img src="inktober24/Frame 29.png" height=550px;>
-      <img src="inktober24/Frame 30.png" height=550px;>
-      <img src="inktober24/Frame 31.png" height=550px;>
-      <img src="inktober24/Frame 32.png" height=550px;>
-      <img src="inktober24/Frame 33.png" height=550px;>
-      <img src="inktober24/Frame 34.png" height=550px;>
-      <img src="inktober24/Frame 35.png" height=550px;>
-      <img src="inktober24/Frame 36.png" height=550px;>
-      <img src="inktober24/Frame 37.png" height=550px;>
-      <img src="inktober24/Frame 38.png" height=250px;>
+    <div class="image-days">
+      <img src="inktober24/Frame 1.png" class="masonry-item";>
+      <img src="inktober24/Frame 2.png" class="masonry-item";>
+      <img src="inktober24/Frame 4.png" class="masonry-item";>
+      <img src="inktober24/Frame 5.png" class="masonry-item";>
+      <img src="inktober24/Frame 6.png" class="masonry-item";>
+      <img src="inktober24/Frame 7.png" class="masonry-item";>
+      <img src="inktober24/Frame 8.png" class="masonry-item";>
+      <img src="inktober24/Frame 9.png" class="masonry-item";>
+      <img src="inktober24/Frame 10.png" class="masonry-item";>
+      <img src="inktober24/Frame 11.png" class="masonry-item";>
+      <img src="inktober24/Frame 12.png" class="masonry-item";>
+      <img src="inktober24/Frame 13(1).png" class="masonry-item";>
+      <img src="inktober24/Frame 14.png" class="masonry-item";>
+      <img src="inktober24/Frame 15.png" class="masonry-item";>
+      <img src="inktober24/Frame 16(1).png" class="masonry-item";>
+      <img src="inktober24/Frame 17.png" class="masonry-item";>
+      <img src="inktober24/Frame 18(1).png" class="masonry-item";>
+      <img src="inktober24/Frame 19.png" class="masonry-item";>
+      <img src="inktober24/Frame 20.png" class="masonry-item";>
+      <img src="inktober24/Frame 21.png" class="masonry-item";>
+      <img src="inktober24/Frame 22.png" class="masonry-item";>
+      <img src="inktober24/Frame 23.png" class="masonry-item";>
+      <img src="inktober24/Frame 24.png" class="masonry-item";>
+      <img src="inktober24/Frame 25.png" class="masonry-item";>
+      <img src="inktober24/Frame 26.png" class="masonry-item";>
+      <img src="inktober24/Frame 27.png" class="masonry-item";>
+      <img src="inktober24/Frame 28.png" class="masonry-item";>
+      <img src="inktober24/Frame 29.png" class="masonry-item";>
+      <img src="inktober24/Frame 30.png" class="masonry-item";>
+      <img src="inktober24/Frame 31.png" class="masonry-item";>
+      <img src="inktober24/Frame 32.png" class="masonry-item";>
+      <img src="inktober24/Frame 33.png" class="masonry-item";>
+      <img src="inktober24/Frame 34.png" class="masonry-item";>
+      <img src="inktober24/Frame 35.png" class="masonry-item";>
+      <img src="inktober24/Frame 36.png" class="masonry-item";>
+      <img src="inktober24/Frame 37.png" class="masonry-item";>
+      <img src="inktober24/Frame 38.png" class="masonry-item";>
 
 
 
