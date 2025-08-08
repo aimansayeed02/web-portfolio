@@ -18,21 +18,48 @@ const { title } = Astro.props;
   logoSrc="/contactpagelogo.png"
   alt="My Website Logo"
  />
- 
+
  <style>
 #walkingimg{
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px;
+
+  }
+  #linkimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding:40px;
 
   }
   </style>
 
+<div id="linkimg" >
+<a href="https://www.linkedin.com/in/aiman-sayeed-751895234" class="logo">
+    <img src="linkedinlogo.png" alt="Site Logo" class="logo-img" width="80px"; />
+  </a>
+  <a href="https://www.behance.net/aiman_sayeed" class="logo">
+    <img src="behancelogo.png" alt="Site Logo" class="logo-img" width="80px"; />
+  </a>
+  <a href="https://www.aimann.sayeed04@gmail.com" class="logo">
+    <img src="maillogo.png" alt="Site Logo" class="logo-img" width="80px"; />
+  </a>
+  <a href="https://open.spotify.com/user/sexmyxt9kgqqumu0cxs3rggcl?si=3379c8052b1e4f9c" class="logo">
+    <img src="spotifylogo.png" alt="Site Logo" class="logo-img" width="80px"; />
+  </a>
+  </div>
+  <div id="walkingimg" class="font1" >
+    <p>
+    <span style="font-weight: bold; font-style: italic;">
+    Got an idea, a project, or just want to say hi??</span>
+     I'm all ears (and emails).<br> Whether it's brainstorming something brilliant or chatting about music ?
 
-<div id="walkingimg" >
+  </p>
+
   <img src="walkingimg.png" width="440px">
-  <h2>
-
-  </h2>
   </div>
 
 
