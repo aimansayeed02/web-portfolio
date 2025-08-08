@@ -1,0 +1,81 @@
+---
+import Navbar from '../components/navbar.astro'
+import '../styles/styles.css'
+import Footer from '../components/footer.astro'
+
+
+const { title } = Astro.props;
+
+---
+<style>
+		@import url("https://use.typekit.net/vkr0nvh.css");
+
+    .inkbox{
+        display: flex;
+        justify-content: center;
+      }
+      .text{
+        font-size: 1rem;
+        /* margin : 60px 30px; */
+        padding-right:250px;
+        padding-left:150px;
+
+      }
+      .image-days{
+        column-count: 3;
+       column-gap: 15px;
+       padding:28px;
+}
+.masonry-item {
+  width: 100%;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  display: block;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#linkimg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+
+  }
+
+
+@media (max-width: 768px) {
+  .image-days{
+      column-count: 2;
+       column-gap: 15px;
+       padding:28px;
+}
+}
+		</style>
+
+<Navbar
+  logoSrc="/inktoberlogo.png"
+  alt="My Website Logo"
+ />
+
+
+ <div class="inkbox">
+		<img src="/public/inktoberbase.png" height="90px";> </div>
+    <div class="info">
+    <div class="text font1">
+      <p>
+        <h2>Inktober 2023</h2>
+        <br>
+For Inktober 2023, text etxt
+      </p>
+    </div>
+    <div class="image-days">
+      <img src="inktober24/Frame 38.png" class="masonry-item";>
+
+
+
+    </div>
+    <div id="linkimg" >
+
+<a href="https://www.behance.net/gallery/196168643/Inktober-2023-illustrations" target="_blank" class="logo">
+    <img src="behancelogo.png" alt="Site Logo" class="logo-img" width="60px"; /></a></div>
