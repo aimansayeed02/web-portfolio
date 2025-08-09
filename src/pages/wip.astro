@@ -1,0 +1,45 @@
+---
+import Navbar from '../components/navbar.astro'
+import '../styles/styles.css'
+import Footer from '../components/footer.astro'
+const { title } = Astro.props;
+---
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aiman's Digital journal</title>
+		<style>
+		@import url("https://use.typekit.net/vkr0nvh.css");
+
+    .yearjournal{
+				display: flex;
+				align-items: center;
+				justify-content: center;}
+
+
+
+
+		</style>
+  </head>
+<body>
+    <Navbar
+  logoSrc="/logo01.png"
+  alt="My Website Logo"
+ />
+<div class="yearjournal">
+ <img src="workin.gif" height="400px";>
+ <h1 class="font2">
+   working on it!!
+ </h1><br>
+ <p class="font1">
+  "Hold tight... this page is still under construction!"
+ </p>
+</div>
+
+
+
+
+
+
+
+<Footer />
