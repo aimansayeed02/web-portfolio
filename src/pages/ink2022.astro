@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Simple Magnifier</title>
+<style>
+  .img-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  #myimage {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .magnifier {
+    position: absolute;
+    border: 2px solid #000;
+    border-radius: 50%;
+    cursor: none;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    display: none;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+    z-index: 05;
+  }
+
+  .magnifier img {
+    position: absolute;
+    width: 600px; /* same as #myimage width */
+    height: auto;
+    user-select: none;
+  }
+</style>
+</head>
+<body>
+
+<div class="img-container">
+  <img id="myimage" src="inktober24/cover01.jpg" alt="Zoom Image" />
+  <div class="magnifier" id="magnifier">
+    <img src="inktober24/cover01.jpg" alt="Zoomed" />
+  </div>
+</div>
+
+<script>
+  const img = document.getElementById("myimage");
+  const magnifier = document.getElementById("magnifier");
+  const magnifierImg = magnifier.querySelector("img");
+  const zoom = 2; // zoom factor
+  const magnifierRadius = magnifier.offsetWidth / 2;
+
+  img.addEventListener("mousemove", moveMagnifier);
+  img.addEventListener("mouseenter", () => magnifier.style.display = "block");
+  img.addEventListener("mouseleave", () => magnifier.style.display = "none");
+
+  function moveMagnifier(e) {
+    const rect = img.getBoundingClientRect();
+    let x = e.clientX - rect.left;
+    let y = e.clientY - rect.top;
+
+    if (x < 0 || y < 0 || x > rect.width || y > rect.height) {
+      magnifier.style.display = "none";
+      return;
+    }
+
+    magnifier.style.display = "block";
+
+    // Position magnifier centered on cursor
+    let posX = x - magnifierRadius;
+    let posY = y - magnifierRadius;
+
+    magnifier.style.left = posX + "px";
+    magnifier.style.top = posY + "px";
+
+    // Move zoomed image inside magnifier (inverse movement)
+    magnifierImg.style.left = -(x * zoom - magnifierRadius) + "px";
+    magnifierImg.style.top = -(y * zoom - magnifierRadius) + "px";
+    magnifierImg.style.width = img.width * zoom + "px";
+  }
+</script>
+
+</body>
+</html>

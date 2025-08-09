@@ -31,7 +31,10 @@ const { title } = Astro.props;
   margin-bottom: 12px;
   border-radius: 8px;
   display: block;
-  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  transition: transform 0.4s ease;
+}
+.masonry-item:hover {
+  transform: scale(1.6);
 }
 
 #linkimg{
@@ -39,8 +42,6 @@ const { title } = Astro.props;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
-
   }
 
 
@@ -95,3 +96,4 @@ For Inktober 2023, text etxt
 
 <a href="https://www.behance.net/gallery/196168643/Inktober-2023-illustrations" target="_blank" class="logo">
     <img src="behancelogo.png" alt="Site Logo" class="logo-img" width="60px"; /></a></div>
+     <Footer />
