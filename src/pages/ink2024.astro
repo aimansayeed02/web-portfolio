@@ -32,7 +32,14 @@ const { title } = Astro.props;
   border-radius: 8px;
   display: block;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.4s ease;
 }
+
+.masonry-item:hover {
+  transform: scale(1.1);
+}
+
+
 
 #linkimg{
         display: flex;
@@ -116,7 +123,6 @@ also used a square sketchbook this year! so will have a lot of square and long l
 <div id="linkimg" >
 <a href="https://www.behance.net/gallery/212087741/INKTOBER-2024-%28Part1%29" target="_blank" class="logo">
     <img src="behancelogo.png" alt="Site Logo" class="logo-img" width="60px"; /></a></div>
-
 
 
 
