@@ -2,7 +2,6 @@
 .font1 {
   font-family: all-round-gothic, sans-serif;
 }
-
 .font2 {
   font-family: canvas-inline, sans-serif;
 
@@ -17,7 +16,7 @@
 				 min-height: 100vh;
 				background-image:url(/public/background.jpg);
 				overflow-x: hidden;
-				
+
 			}
 
       @media (max-width: 768px)
