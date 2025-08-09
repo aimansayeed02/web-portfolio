@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Foreground with Grid Overlay</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+    }
+
+
+    body {
+      position: relative;
+        background-image: url('background.jpg'); /* Background image */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        color: white;
+    }
+
+    /* Foreground container */
+    .foreground-container {
+        width: 90vw;
+        max-width: 1200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+
+    }
+
+    /* Foreground image */
+    .foreground-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        padding:50px;
+        position: absolute;
+    }
+
+    .overlay-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding: 60px;
+        box-sizing: border-box;
+        z-index: 1000;
+        margin: 50px 200px;
+
+
+    }
+
+    .left-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 20px;
+
+    }
+
+    .left-content img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+
+    .right-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+   <div class="overlay-grid">
+            <!-- Left side: text + image -->
+            <div class="left-content">
+                <h2>Left Side Heading</h2>
+                <p>This is the left side content with some descriptive text.</p>
+                <img src="cartoonimg01.png" alt="Small">
+            </div>
+
+            <!-- Right side: text/image -->
+            <div class="right-content">
+                <h2>Right Side Content</h2>
+                <p>You can place any text, image, or elements here.</p>
+            </div>
+        </div>
+
+    <div class="foreground-container">
+        <img src="foregroundimg.png" alt="Foreground">
+
+
+    </div>
+
+</body>
+</html>
+
+
+
+
+
