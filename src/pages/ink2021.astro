@@ -1,20 +1,37 @@
+---
+import Navbar from '../components/navbar.astro'
+import '../styles/styles.css'
+import Footer from '../components/footer.astro'
+
+
+const { title } = Astro.props;
+
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Simple Magnifier</title>
+<title>Inktober2023</title>
+
 <style>
+		@import url("https://use.typekit.net/vkr0nvh.css");
+    </style>
+    <style>
+
   .img-container {
     position: relative;
     display: inline-block;
+
   }
 
   #myimage {
     display: block;
-    max-width: 600px;
+    max-width: 800px;
     width: 100%;
     border-radius: 8px;
+
+
   }
 
   .magnifier {
@@ -37,13 +54,17 @@
     user-select: none;
   }
 </style>
+<Navbar
+  logoSrc="/inktoberlogo.png"
+  alt="My Website Logo"
+ />
 </head>
 <body>
 
 <div class="img-container">
-  <img id="myimage" src="inktober24/cover01.jpg" alt="Zoom Image" />
+  <img id="myimage" src="inktober24/cover02.jpg" alt="Zoom Image" />
   <div class="magnifier" id="magnifier">
-    <img src="inktober24/cover01.jpg" alt="Zoomed" />
+    <img src="inktober24/cover02.jpg" alt="Zoomed" />
   </div>
 </div>
 
