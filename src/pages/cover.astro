@@ -1,10 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+import Navbar from '../components/navbar.astro'
+import '../styles/styles.css'
+import Footer from '../components/footer.astro'
+import Button from '../components/aboutbutton.astro'
+
+
+---
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Foreground with Grid Overlay</title>
 <style>
+    @import url("https://use.typekit.net/vkr0nvh.css");
+		 <link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css">
+
+
     body, html {
         margin: 0;
         padding: 0;
@@ -21,11 +31,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: sans-serif;
-        color: white;
-    }
+        color: white;}
 
-    /* Foreground container */
+
     .foreground-container {
         width: 90vw;
         max-width: 1200px;
@@ -36,7 +44,6 @@
 
     }
 
-    /* Foreground image */
     .foreground-container img {
         width: 100%;
         height: auto;
@@ -48,27 +55,42 @@
     .overlay-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 50px;
-        padding: 60px;
+        gap: 20px;
+        padding: 40px;
         box-sizing: border-box;
         z-index: 1000;
-        margin: 50px 200px;
-
+        margin: 40px 200px;
 
     }
 
-    .left-content {
+      {
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        /* align-items: flex-end; */
+        text-align: center;
         background: rgba(0, 0, 0, 0.3);
-        padding: 20px;
+        padding: 10px;
+        height: 400px; }
 
+    .left-content {
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        align-items: flex-end;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        border-radius: 10px;
+        text-align: center;
+        height: 500px;
     }
+    .text {
+    flex: 1;}
+
+
 
     .left-content img {
-        max-width: 80%;
+        /* max-width: 100%; */
         margin-top: 20px;
     }
 
@@ -86,24 +108,30 @@
 </head>
 <body>
    <div class="overlay-grid">
-            <!-- Left side: text + image -->
+
+
             <div class="left-content">
-                <h2>Left Side Heading</h2>
-                <p>This is the left side content with some descriptive text.</p>
-                <img src="cartoonimg01.png" alt="Small">
+              <div class="text">
+        <h1>This is the heading</h1>
+        <p>This is some description text next to the image.</p>
+             </div>
+                <img src="cartoonimg01.png" alt="Small" height="370px">
+
             </div>
 
             <!-- Right side: text/image -->
             <div class="right-content">
                 <h2>Right Side Content</h2>
                 <p>You can place any text, image, or elements here.</p>
-            </div>
-        </div>
+            </div>        </div>
+
+
+
+
+
 
     <div class="foreground-container">
         <img src="foregroundimg.png" alt="Foreground">
-
-
     </div>
 
 </body>
