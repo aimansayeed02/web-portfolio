@@ -24,13 +24,16 @@ import Button from '../components/aboutbutton.astro'
 
     body {
       position: relative;
-        background-image: url('background.jpg'); /* Background image */
-        background-position: center;
+        background-image: url('background02.jpg');
+        /* background-position: center; */
         background-attachment: fixed;
+        background-repeat: no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;}
+        background-size: cover;
+
+        }
 
 
     .foreground-container {
@@ -49,6 +52,7 @@ import Button from '../components/aboutbutton.astro'
         display: block;
         padding:60px;
         position: absolute;
+
     }
 
     .overlay-grid {
@@ -85,9 +89,9 @@ import Button from '../components/aboutbutton.astro'
     .text {
     flex: 1;
     color:black;
-    padding-left:50px;
+    padding-left:60px;
+    height: 300px;}
 
-}
 
     .left-content img {
         max-width: 100%;
@@ -100,7 +104,6 @@ import Button from '../components/aboutbutton.astro'
 
     }
 
-
     .right-content {
         display: flex;
         justify-content: center;
@@ -108,13 +111,33 @@ import Button from '../components/aboutbutton.astro'
         background: rgba(0, 0, 0, 0.3);
         padding: 30px;
         border-radius: 10px;
-        text-align: center;
-    }
+        text-align: center; }
+
+        
+    .side-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 140%;
+    background: url('borderleft.png');
+    background-size: cover;
+    z-index: 10;
+}
+
+
 </style>
 </head>
 <body>
-   <div class="overlay-grid">
 
+    <div class="side-image">
+
+    </div>
+
+<div class="borderimg">
+</div>
+
+   <div class="overlay-grid">
             <div class="left-content">
 
               <div class="text">
