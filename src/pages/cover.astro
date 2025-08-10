@@ -25,7 +25,6 @@ import Button from '../components/aboutbutton.astro'
     body {
       position: relative;
         background-image: url('background.jpg'); /* Background image */
-        background-size: cover;
         background-position: center;
         background-attachment: fixed;
         display: flex;
@@ -45,18 +44,18 @@ import Button from '../components/aboutbutton.astro'
     }
 
     .foreground-container img {
-        width: 100%;
+        width: 110%;
         height: auto;
         display: block;
-        padding:50px;
+        padding:60px;
         position: absolute;
     }
 
     .overlay-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
-        padding: 40px;
+        gap: 5px;
+        padding: 20px;
         box-sizing: border-box;
         z-index: 1000;
         margin: 40px 200px;
@@ -67,31 +66,35 @@ import Button from '../components/aboutbutton.astro'
         display: flex;
         flex-direction: column;
         justify-content: center;
-        /* align-items: flex-end; */
         text-align: center;
         background: rgba(0, 0, 0, 0.3);
         padding: 10px;
-        height: 400px; }
+        height: 500px; }
 
     .left-content {
         display: flex;
         justify-content: center;
-        /* align-items: center; */
+        align-items: center;
         align-items: flex-end;
-        background: rgba(0, 0, 0, 0.3);
+        /* background: rgba(0, 0, 0, 0.3); */
         padding: 30px;
         border-radius: 10px;
-        text-align: center;
-        height: 500px;
+        text-align: left;
+        height: 600px;
     }
     .text {
-    flex: 1;}
+    flex: 1;
+    color:black;
 
-
+}
 
     .left-content img {
-        /* max-width: 100%; */
-        margin-top: 20px;
+        max-width: 100%;
+        height:550px;
+        display: flex;
+        justify-content:right;
+        margin-top:0px;
+
     }
 
 
@@ -109,15 +112,25 @@ import Button from '../components/aboutbutton.astro'
 <body>
    <div class="overlay-grid">
 
-
             <div class="left-content">
+
               <div class="text">
-        <h1>This is the heading</h1>
-        <p>This is some description text next to the image.</p>
+                <p style="font-family:canvas-inline; font-size:90px; font-weight: 100;">Hiiii</p>
+                <p class="font1">Welcome to my little corner of the internet!
+      Aiman this side!What you'll find here is- fun art stuff, some design projects, learning aspect of how i've developed with art and exploring different medium!
+       <br><span style="font-weight: bold; font-style: italic;">
+        And some music suggestions,(more like what all music ive explored so far!)
+       </p>
              </div>
-                <img src="cartoonimg01.png" alt="Small" height="370px">
+                <img src="cartoonimg01.png" alt="Small" height="270px">
 
             </div>
+
+
+
+
+
+
 
             <!-- Right side: text/image -->
             <div class="right-content">
