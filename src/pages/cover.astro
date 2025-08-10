@@ -103,7 +103,7 @@ import Button from '../components/aboutbutton.astro'
         justify-content:right;
         margin-top:0px;
         margin-right:-50px;
-        margin-top: -50px;
+        margin-top: -20px;
 
     }
 
@@ -132,7 +132,7 @@ import Button from '../components/aboutbutton.astro'
     top: 0;
     right:0;
     width: 250px;
-    height: 98%;
+    height: 110%;
     background: url('borderright.png');
     background-size: cover;
     z-index: 10;
@@ -146,8 +146,10 @@ import Button from '../components/aboutbutton.astro'
     margin-left:88px;
     transition: transform 0.4s ease;
 }
-#textlink{
-    color:#d83050;
+
+.logo{
+ text-decoration: none;
+ color:#d83050;
 }
 
 .contact{
@@ -175,7 +177,7 @@ transform: scale(1.1);
    <div class="overlay-grid">
             <div class="left-content">
               <div class="text">
-                <p style="font-family:canvas-inline; font-size:90px; font-weight: 100;">Hiiii</p>
+                <p style="font-family:canvas-inline; font-size:90px; font-weight: 100;">Hiii!!!</p>
                 <p class="font1">Welcome to my little corner of the internet!<br>
                     <span style="font-weight: bold; color:#d83050;">
       Aiman this side!</span>What you'll find here is- fun art stuff, some design projects, learning aspect of how i've developed with art and exploring different medium!
@@ -190,13 +192,18 @@ transform: scale(1.1);
 
             </div>
 
-            <!-- Right side: text/image -->
             <div class="right-content">
                <div id="textlink" class="font1">
+
                 <img src="logo01.png"width="350px">
-                <h1>inktober</h1>
-                <h1>projects</h1>
-                <h1>music</h1>
+                <a href="/inktober" class="logo">
+                <h1>Inktober<img src="inkboximg.png"width="170px" align-items:center;></h1>
+            </a>
+            <a href="/work" class="logo">
+                <h1><img src="workprojectimg.png"width="130px" align-items:center;>Projects
+                    </h1></a>
+                <a href="/wip" class="logo">
+                <h1>music</h1></a>
                 </div>
 
 
@@ -210,12 +217,10 @@ transform: scale(1.1);
 
     <div class="foreground-container">
         <img src="foregroundimg.png" alt="Foreground">
+
     </div>
 
-
-
 </body>
-
 </html>
 
 
