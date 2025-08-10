@@ -1,4 +1,7 @@
 
+
+/* <link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css"> */
+
 .font1 {
   font-family: all-round-gothic, sans-serif;
 }
@@ -16,6 +19,7 @@
 				 min-height: 100vh;
 				background-image:url(/public/background.jpg);
 				overflow-x: hidden;
+
 
 			}
 
