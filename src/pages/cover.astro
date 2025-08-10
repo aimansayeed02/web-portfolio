@@ -47,7 +47,7 @@ import Button from '../components/aboutbutton.astro'
     }
 
     .foreground-container img {
-        width: 120%;
+        width: 115%;
         height: auto;
         display: block;
         padding:60px;
@@ -62,7 +62,7 @@ import Button from '../components/aboutbutton.astro'
         padding: 20px;
         box-sizing: border-box;
         z-index: 1000;
-        margin: 40px 200px;
+        margin: 40px 190px;
 
     }
 
@@ -76,25 +76,31 @@ import Button from '../components/aboutbutton.astro'
         height: 500px; }
 
     .left-content {
+
+        width: 570px;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:center;
         align-items: flex-start;
         /* background: rgba(0, 0, 0, 0.3); */
-        /* padding: 30px; */
         border-radius: 10px;
         text-align: left;
-        height: 500px;
+        height: 600px;
+
     }
     .text {
     flex: 1;
     color:black;
-    padding-left:60px;
-    height: 300px;}
+    padding-left:90px;
+    height: 300px;
+    letter-spacing: normal;
+    line-height: 1.4;
+    /* min-width: 80%; */
+}
 
 
     .left-content img {
-        max-width: 100%;
+        max-width: 90%;
         height:550px;
         display: flex;
         justify-content:right;
@@ -113,16 +119,34 @@ import Button from '../components/aboutbutton.astro'
         border-radius: 10px;
         text-align: center; }
 
-        
-    .side-image {
+
+    .side-left {
     position: fixed;
     top: 0;
     left: 0;
     width: 250px;
-    height: 140%;
+    height: 100%;
     background: url('borderleft.png');
     background-size: cover;
     z-index: 10;
+}
+.side-right {
+    position: fixed;
+    top: 0;
+    right:0;
+    width: 250px;
+    height: 98%;
+    background: url('borderright.png');
+    background-size: cover;
+    z-index: 10;
+}
+#about{
+    width: 200px;
+    height: auto;
+    cursor: pointer;
+    align-items:center;
+    margin-top:2px;
+    margin-left:88px;
 }
 
 
@@ -130,12 +154,10 @@ import Button from '../components/aboutbutton.astro'
 </head>
 <body>
 
-    <div class="side-image">
-
+    <div class="side-left">
     </div>
-
-<div class="borderimg">
-</div>
+    <div class="side-right">
+    </div>
 
    <div class="overlay-grid">
             <div class="left-content">
@@ -143,31 +165,25 @@ import Button from '../components/aboutbutton.astro'
               <div class="text">
                 <p style="font-family:canvas-inline; font-size:90px; font-weight: 100;">Hiiii</p>
                 <p class="font1">Welcome to my little corner of the internet!<br>
-                    <span style="font-weight: bold;">
+                    <span style="font-weight: bold; color:#d83050;">
       Aiman this side!</span>What you'll find here is- fun art stuff, some design projects, learning aspect of how i've developed with art and exploring different medium!
        <br><br><span style="font-weight: bold; font-style: italic;">
         And some music suggestions,(more like what all music ive explored so far!)
        </p>
+       <a href="/info" class="logo">
+        <img id="about" src="buttonpink.png"></a>
+
              </div>
                 <img src="cartoonimg01.png" alt="Small" height="270px">
 
             </div>
 
-
-
-
-
-
-
             <!-- Right side: text/image -->
             <div class="right-content">
-                <h2>Right Side Content</h2>
-                <p>You can place any text, image, or elements here.</p>
-            </div>        </div>
 
+                <h3>Right Side Content</h3>
 
-
-
+            </div>  </div>
 
 
     <div class="foreground-container">
