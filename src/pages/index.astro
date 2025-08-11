@@ -18,6 +18,7 @@ import Button from '../components/aboutbutton.astro'
         margin: 0;
         padding: 0;
         height: 100%;
+        /* overflow-y: hidden; */
     }
 
 
@@ -34,7 +35,7 @@ import Button from '../components/aboutbutton.astro'
         }
 
     .foreground-container {
-        width: 90vw;
+        width: 90%;
         max-width: 1200px;
         display: flex;
         justify-content: center;
@@ -43,22 +44,21 @@ import Button from '../components/aboutbutton.astro'
 
     }
     .foreground-container img {
-        width: 125%;
+        width: 130%;
         height: auto;
         display: block;
         position: absolute;
-        padding:40px;
+        padding:60px;
 
     }
-
     .overlay-grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 5px;
-        padding: 20px;
+        /* padding: 20px; */
         box-sizing: border-box;
         z-index: 1100;
-        margin: 40px 190px;
+        /* margin: 40px 180px; */
 
     }
 
@@ -77,7 +77,9 @@ import Button from '../components/aboutbutton.astro'
         display: flex;
         justify-content: center;
         align-items:center;
-        align-items: flex-start;
+        /* align-items: flex-start; */
+        align-items:columns;
+
         /* background: rgba(0, 0, 0, 0.3); */
         border-radius: 10px;
         text-align: left;
@@ -91,19 +93,21 @@ import Button from '../components/aboutbutton.astro'
     height: 220px;
     letter-spacing: normal;
     line-height: 1.4;
-    margin-top:30px;
+    margin-top:50px;
     margin-left:90px;
     /* min-width: 80%; */
 }
 
     .left-content img {
         max-width: 90%;
-        height:550px;
+        height:450px;
         display: flex;
         justify-content:right;
-        margin-top:0px;
+        align-items: center;
+
+        /* margin-top:0px; */
         margin-right:-50px;
-        margin-top: -20px;
+        /* margin-top: 60px; */
     }
 
     .right-content {
@@ -193,16 +197,30 @@ transform: scale(1.1);
 
             <div class="right-content">
                <div id="textlink" class="font1">
-
                 <img src="/images/logo01.png"width="350px">
+
                 <a href="/inktober" class="logo">
-                <h1>Inktober<img src="/images/inkboximg.png"width="170px" align-items:center;></h1>
+                <h2 style="text-align:left">Inktober<img src="/images/inkboximg.png"width="120px" align-items:center;></h2>
             </a>
+
             <a href="/work" class="logo">
-                <h1><img src="/images/workprojectimg.png"width="130px" align-items:center;>Projects
-                    </h1></a>
-                <a href="/wip" class="logo">
-                <h1>music</h1></a>
+                <h2 style="text-align:left">Projects<img src="/images/projectsimg.png"width="120px" align-items:center;></h2>
+            </a>
+
+             <a href="/wip" class="logo">
+                <h2 style="text-align:left">Photos
+                    <img src="/images/photoclick.png"width="120px" align-items:center;>
+                </h2>
+            </a>
+
+            <a href="/wip" class="logo">
+                <h2 style="text-align:left">Music<img src="/images/inkboximg.png"width="120px" align-items:center;></h2>
+            </a>
+
+
+
+
+
                 </div>
             </div>
 
@@ -210,15 +228,19 @@ transform: scale(1.1);
     <img src="/images/contactimg.png" alt="conatctme" class="contact-img" width="200px" />
   </a>
 
-<Footer
-/>
-
         </div>
+
 
     <div class="foreground-container">
         <img src="/images/foregroundimg.png" alt="Foreground">
-
     </div>
+
+
+  </div>
+
+
+
+
 
 </body>
 
