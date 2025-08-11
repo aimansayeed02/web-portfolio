@@ -28,7 +28,7 @@ const { title } = Astro.props;
         <br>
         <p>
 Put together a little showcase of photos from differnt trips and stays in cities -
-you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman and nicobar</p>
+you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman & nicobar-Himachal Spiti-Gujarat</p>
 
 
     </div>
@@ -36,9 +36,13 @@ you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman and nicobar</p>
       <img src="/images/clicks/01.jpeg" class="masonry-item";>
       <img src="/images/clicks/02.jpg" class="masonry-item";>
       <img src="/images/clicks/03.jpg" class="masonry-item";>
+      <img src="/images/clicks/27.jpeg" class="masonry-item";>
       <img src="/images/clicks/04.jpg" class="masonry-item";>
         <img src="/images/clicks/05.jpg" class="masonry-item";>
+         <img src="/images/clicks/39.jpeg" class="masonry-item";>
+        <img src="/images/clicks/24.jpeg" class="masonry-item";>
          <img src="/images/clicks/06.jpg" class="masonry-item";>
+         <img src="/images/clicks/28.png" class="masonry-item";>
           <img src="/images/clicks/07.jpg" class="masonry-item";>
           <img src="/images/clicks/10.jpg" class="masonry-item";>
            <img src="/images/clicks/08.jpg" class="masonry-item";>
@@ -54,6 +58,19 @@ you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman and nicobar</p>
            <img src="/images/clicks/18.jpeg" class="masonry-item";>
            <img src="/images/clicks/19.jpg" class="masonry-item";>
            <img src="/images/clicks/23.jpg" class="masonry-item";>
+           <img src="/images/clicks/26.png" class="masonry-item";>
+           <img src="/images/clicks/27.jpeg" class="masonry-item";>
+           <img src="/images/clicks/29.jpeg" class="masonry-item";>
+           <img src="/images/clicks/39.jpeg" class="masonry-item";>
+           <img src="/images/clicks/37.jpeg" class="masonry-item";>
+           <img src="/images/clicks/36.jpeg" class="masonry-item";>
+           <img src="/images/clicks/35.jpeg" class="masonry-item";>
+           <img src="/images/clicks/34.jpeg" class="masonry-item";>
+           <img src="/images/clicks/33.jpeg" class="masonry-item";>
+           <img src="/images/clicks/32.jpeg" class="masonry-item";>
+           <img src="/images/clicks/31.jpeg" class="masonry-item";>
+           <img src="/images/clicks/30.jpeg" class="masonry-item";>
+
 
 
 
@@ -74,7 +91,7 @@ you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman and nicobar</p>
 .inkbox{
         display: flex;
         justify-content: center;
-        padding:50px;
+        padding-top:0px;
       }
       .text{
         font-size: 16px;
@@ -84,6 +101,7 @@ you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman and nicobar</p>
         column-count: 3;
        column-gap: 15px;
        padding:28px;
+       margin:40px;
 }
       .masonry-item {
   width: 100%;
@@ -92,6 +110,9 @@ you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman and nicobar</p>
   display: block;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   transition: transform 0.4s ease;
+}
+.masonry-item:hover {
+  transform: scale(1.1);
 }
 
 
