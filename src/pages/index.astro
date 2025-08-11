@@ -24,7 +24,6 @@ import Button from '../components/aboutbutton.astro'
     body {
       position: relative;
         background-image: url('background02.jpg');
-        /* background-position: center; */
         background-attachment: fixed;
         background-repeat: no-repeat;
         display: flex;
@@ -44,11 +43,11 @@ import Button from '../components/aboutbutton.astro'
 
     }
     .foreground-container img {
-        width: 130%;
+        width: 125%;
         height: auto;
         display: block;
-        padding:50px;
         position: absolute;
+        padding:40px;
 
     }
 
@@ -58,7 +57,7 @@ import Button from '../components/aboutbutton.astro'
         gap: 5px;
         padding: 20px;
         box-sizing: border-box;
-        z-index: 900;
+        z-index: 1100;
         margin: 40px 190px;
 
     }
@@ -85,13 +84,15 @@ import Button from '../components/aboutbutton.astro'
         height: 500px;
 
     }
+    
     .text {
     flex: 1;
     color:black;
-    padding-left:90px;
-    height: 300px;
+    height: 220px;
     letter-spacing: normal;
     line-height: 1.4;
+    margin-top:30px;
+    margin-left:90px;
     /* min-width: 80%; */
 }
 
