@@ -28,7 +28,7 @@ import Button from '../components/aboutbutton.astro'
         background-attachment: fixed;
         background-repeat: no-repeat;
         display: flex;
-        padding-top: 80px;
+        padding-top: 30px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -154,6 +154,7 @@ import Button from '../components/aboutbutton.astro'
 .logo{
  text-decoration: none;
  color:#d83050;
+ transition: transform 0.4s ease;
 }
 
 .contact{
@@ -167,6 +168,9 @@ import Button from '../components/aboutbutton.astro'
 }
 #about:hover{
 transform: scale(1.1);
+}
+.logo:hover{
+    transform: scale(1.1);
 }
 
 </style>
@@ -214,19 +218,19 @@ transform: scale(1.1);
             </a>
 
             <a href="/wip" class="logo">
-                <img src="/images/inkboximg.png"width="120px" align-items:center;>
+                <img src="/images/musiclick.png"width="120px" align-items:center;>
                 <h2 style="text-align:left">Music</h2>
             </a>
 
 
                 </div>
             </div>
+
 <!-- <a href="/contact" class="contact">
     <img src="/images/contactimg.png" alt="conatctme" class="contact-img" width="200px" />
   </a> -->
 
         </div>
-
 
     <div class="foreground-container">
         <img src="/images/foregroundimg.png" alt="Foreground">

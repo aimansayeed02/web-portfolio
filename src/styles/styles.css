@@ -1,6 +1,11 @@
 
 
 /* <link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css"> */
+::selection{
+	color:beige;
+	background-color: crimson;
+}
+
 
 .font1 {
   font-family: all-round-gothic, sans-serif;
