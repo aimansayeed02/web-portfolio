@@ -17,7 +17,6 @@ import Button from '../components/aboutbutton.astro'
     body, html {
         margin: 0;
         padding: 0;
-        height: 90%;
         /* overflow-y: hidden; */
     }
 
@@ -170,32 +169,66 @@ transform: scale(1.1);
 .logo:hover{
     transform: scale(1.1);
 }
-
+.left-headimg {
+    display:none;
+}
 
 @media (max-width: 768px) {
 
-    .side-left,.side-right {
-    max-width: 160px;
+
+
+    .side-left, .side-right {
+    display: none;
   }
 
    .overlay-grid{
     display:flex;
     flex-direction: column;
-    width: 100px;
+    /* width: 100vw; */
+    margin: auto;
   }
 
    .text {
     font-size:14px;
-
+    display:flex;
+    flex-direction:column;
+    margin: 10px 83px 0 0;
 }
  .foreground-container img {
         width: 500%;
         height: auto;
         display: block;
         position: absolute;
+        display: none;
     }
 #about{
-    width:50px;
+            width: 126px;
+        align-items: center;
+        margin: auto;
+        margin-top: 1rem;
+        position: absolute;
+        right: 7%;
+        top: 39%;
+        z-index: 5;
+        rotate: -14deg;
+}
+.left-content{
+    display: flex;
+    flex-direction: column;
+}
+.cartoon{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    right: 0;
+    top: 23%
+
+}
+.left-headimg {
+    display:block;
+}
+.head_image{
+    display: none;
 }
 
 
@@ -207,11 +240,16 @@ transform: scale(1.1);
 
 <body>
 
-    <div class="side-left"></div>
-    <div class="side-right"></div>
+        <div class="side-left"></div>
+        <div class="side-right"></div>
 
    <div class="overlay-grid">
+
+
             <div class="left-content">
+                <div class= "left-headimg">
+                    <img src="/images/logo01.png"width="300px">
+                </div>
               <div class="text">
                 <p style="font-family:canvas-inline; font-size:90px; font-weight: 100;">Hiii!!!</p>
                 <p class="font1">Welcome to my little corner of the internet!<br>
@@ -224,13 +262,15 @@ transform: scale(1.1);
         <img id="about" src="/images/buttonpink.png"></a>
              </div>
 
+<div class="cartoon">
                 <img src="/images/cartoonimg01.png" alt="Small" width="250px">
+</div>
 
             </div>
 
             <div class="right-content">
                <div id="textlink" class="font1">
-                <img src="/images/logo01.png"width="300px">
+                <img class="head_image" src="/images/logo01.png"width="300px">
 
                 <a href="/inktober" class="logo">
                 <h2 style="text-align:left">Inktober</h2><img src="/images/inkboximg.png"width="135px" align-items:center;>
