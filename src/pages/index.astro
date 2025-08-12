@@ -175,8 +175,6 @@ transform: scale(1.1);
 
 @media (max-width: 768px) {
 
-
-
     .side-left, .side-right {
     display: none;
   }
@@ -199,10 +197,12 @@ transform: scale(1.1);
         height: auto;
         display: block;
         position: absolute;
-        display: none;
+
+        /* display: none; */
     }
+
 #about{
-            width: 126px;
+        width: 126px;
         align-items: center;
         margin: auto;
         margin-top: 1rem;
@@ -215,6 +215,9 @@ transform: scale(1.1);
 .left-content{
     display: flex;
     flex-direction: column;
+}
+.right-content{
+    margin-top:20%;
 }
 .cartoon{
     position: absolute;
@@ -230,7 +233,6 @@ transform: scale(1.1);
 .head_image{
     display: none;
 }
-
 
 
   }
@@ -254,9 +256,9 @@ transform: scale(1.1);
                 <p style="font-family:canvas-inline; font-size:90px; font-weight: 100;">Hiii!!!</p>
                 <p class="font1">Welcome to my little corner of the internet!<br>
                     <span style="font-weight: bold; color:#d83050;">
-      Aiman this side!</span>What you'll find here is- fun art stuff, some design projects, learning aspect of how i've developed with art and exploring different medium!
+      Aiman this side!</span> What you'll find here is- fun art stuff, some design projects, learning aspect of how i've developed with art and exploring different medium!
        <br><br><span style="font-weight: bold; font-style: italic;">
-        And some music suggestions,(more like what all music ive explored so far!)
+        And some music suggestions,(more like what all music I've explored so far!)
        </p>
        <a href="/info">
         <img id="about" src="/images/buttonpink.png"></a>
@@ -284,14 +286,12 @@ transform: scale(1.1);
              <a href="/photos" class="logo">
                 <h2 style="text-align:left">Photos</h2>
                     <img src="/images/photoclick.png"width="130px" align-items:center;>
-
             </a>
 
             <a href="/wip" class="logo">
                 <img src="/images/musiclick.png"width="120px" align-items:center;>
                 <h2 style="text-align:left">Music</h2>
             </a>
-
 
                 </div>
             </div>
