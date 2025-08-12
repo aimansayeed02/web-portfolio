@@ -106,14 +106,22 @@ you'll find -<br> Delhi-Hyderabad-Ladakh-Andaman & nicobar-Himachal Spiti-Gujara
       .masonry-item {
   width: 100%;
   margin-bottom: 12px;
-  border-radius: 8px;
+  border-radius: 14px;
   display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px rgba(48, 47, 47, 0.2);
   transition: transform 0.4s ease;
 }
 .masonry-item:hover {
   transform: scale(1.1);
 }
+
+
+@media (max-width: 768px) {
+  .image-clicks{
+      column-count: 2;
+       column-gap: 15px;
+       padding:28px;}
+      }
 
 
       </style>

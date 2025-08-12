@@ -9,8 +9,8 @@ const __dirname = path.dirname(__filename);
 
 async function optimizeImages() {
   // Get command line arguments or use defaults
-  const inputDir = process.argv[2] || './src/public/images';
-  const outputDir = process.argv[3] || './src/public/images-optimized';
+  const inputDir = process.argv[2] || './public/images';
+  const outputDir = process.argv[3] || './public/images-optimized';
 
   // Supported image formats
   const supportedFormats = ['.jpg', '.jpeg', '.png', '.gif', '.bmp', '.tiff', '.webp'];
@@ -63,7 +63,7 @@ async function optimizeImages() {
         await sharp(inputPath)
           .webp({
             quality: 80,           // Adjust quality (0-100)
-            effort: 4,             // Compression effort (0-6)
+            effort: 6,             // Compression effort (0-6)
             lossless: false        // Set to true for lossless compression
           })
           .toFile(outputPath);
@@ -85,7 +85,7 @@ async function optimizeImages() {
     console.error('❌ Error:', error.message);
     process.exit(1);
   }
-} 
+}
 
 // Run the optimization
 optimizeImages();
