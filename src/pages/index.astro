@@ -60,9 +60,10 @@ import Button from '../components/aboutbutton.astro'
         box-sizing: border-box;
         z-index: 1100;
         padding:60px;
+
     }
 
-      {
+      .right-content {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -87,12 +88,9 @@ import Button from '../components/aboutbutton.astro'
     .text {
     flex: 1;
     color:black;
-    /* height: 220px; */
     letter-spacing: normal;
     line-height: 1.4;
     margin-top:30px;
-
-    /* margin-top:50px; */
     margin-left:90px;
     /* min-width: 80%; */
 }
@@ -131,7 +129,7 @@ import Button from '../components/aboutbutton.astro'
     background-size: cover;
     z-index: 10;
 }
-.side-right {
+    .side-right {
     position: fixed;
     top: 0;
     right:0;
@@ -173,6 +171,38 @@ transform: scale(1.1);
     transform: scale(1.1);
 }
 
+
+@media (max-width: 768px) {
+
+    .side-left,.side-right {
+    max-width: 160px;
+  }
+
+   .overlay-grid{
+    display:flex;
+    flex-direction: column;
+    width: 100px;
+  }
+
+   .text {
+    font-size:14px;
+
+}
+ .foreground-container img {
+        width: 500%;
+        height: auto;
+        display: block;
+        position: absolute;
+    }
+#about{
+    width:50px;
+}
+
+
+
+  }
+
+
 </style>
 
 <body>
@@ -190,10 +220,10 @@ transform: scale(1.1);
        <br><br><span style="font-weight: bold; font-style: italic;">
         And some music suggestions,(more like what all music ive explored so far!)
        </p>
-       <a href="/info" class="logo">
+       <a href="/info">
         <img id="about" src="/images/buttonpink.png"></a>
-
              </div>
+
                 <img src="/images/cartoonimg01.png" alt="Small" width="250px">
 
             </div>
@@ -226,15 +256,12 @@ transform: scale(1.1);
                 </div>
             </div>
 
-<!-- <a href="/contact" class="contact">
-    <img src="/images/contactimg.png" alt="conatctme" class="contact-img" width="200px" />
-  </a> -->
-
         </div>
 
     <div class="foreground-container">
         <img src="/images/foregroundimg.png" alt="Foreground">
     </div>
+
   </div>
 
 <Footer

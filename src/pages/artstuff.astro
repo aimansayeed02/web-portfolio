@@ -5,140 +5,53 @@ import Footer from '../components/footer.astro'
 const { title } = Astro.props;
 ---
 <head>
-		<link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css">
-		</head>
-    <body>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital journal space</title>
+ <link rel="stylesheet" href="https://use.typekit.net/vkr0nvh.css">
+</head>
 <Navbar
-  logoSrc="/artpagelogo.png"
+  logoSrc="/images-optimized/artpagelogo.webp";
   alt="My Website Logo"
  />
+ <style>
 
-<style>
-  * {
-				margin: 0;
-				padding: 0;
-				box-sizing: border-box;
+
+         .buttons{
+
+				display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+				align-items: center;
+        box-sizing: border-box;
+
+
+
 			}
 
-			.layout {
-				display: flex;
-				min-height: 100vh;
-			}
-        .right-content {
-				/* flex: 1; */
-				/* align-items: center; */
-				/* justify-content: center; */
-				padding-right: 70px ;
-			}
-      .left-content {
-				flex: 2;
-				padding: 70px;
-				padding-left:80px;
-				padding-bottom: 0px;;
-				display: flex;
-				flex-direction: column;
-				/* justify-content: center; */
-				/* padding-top: 10px; */
-			}
+              </style>
 
-      .box {
-    width: 450px;
-    aspect-ratio: 4/ 5;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left:100px;
-    margin-top:40px;
-    border-radius: 10%;
-    background-image: ;
-  }
+<div class="buttons font1">
+ <a href="/inktober" class="logo">
+      <h2 style="text-align:left">Inktober</h2><img src="/images/inkboximg.png"width="135px" align-items:center;>
+            </a>
 
+            <a href="/wip" class="logo">
+      <h2 style="text-align:left">Traditional art</h2><img src="/images/inkboximg.png"width="135px" align-items:center;>
+            </a>
 
-  #blue1{
-    object-fit: contain;
-    position: absolute;
-    right: 130px;
-    bottom:10px;
-  }
-  #blue2{
-    position: absolute;
-    object-fit: contain;
-    right: 300px;
-    bottom:10px;
+            <a href="/wip" class="logo">
+      <h2 style="text-align:left">Thigns in clouds</h2><img src="/images/inkboximg.png"width="135px" align-items:center;>
+            </a>
 
-  }
-  #blue3{
-    object-fit: contain;
-    position: absolute;
-    bottom: 10px;
-    right: 480px;
-
-  }
-
-   #blue2:hover{
-    transform: rotate(10deg);
-    transition: transform 0.9s ease;
-  }
-  #blue1:hover{
-    transform: rotate(10deg);
-    transition: transform 0.9s ease;
-  }
-  #blue3:hover{
-    transform: rotate(10deg);
-    transition: transform 0.9s ease;
-  }
-
-      .spin {
-  width: 200px; /* optional */
-  animation: spin 8s linear infinite;
-}
-
-@keyframes spin {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(360deg); }
-}
-
-      @media (max-width: 768px) {
-				.layout {
-					flex-direction: column;
-				}
-				.left-content,
-				.right-content {
-					padding: 40px 20px;
-				}
-			}
-
-      </style>
-
-      <div class="layout">
-
-			<div class="left-content font1">
-				<slot name="left">
-          <div class="box">
-
+            <a href="/wip" class="logo">
+      <h2 style="text-align:left"> Journals </h2><img src="/images/inkboximg.png"width="135px" align-items:center;>
+            </a>
           </div>
-        </slot>
-			 </div>
-
-       <div class="right-content font1">
-				<slot name="right">
-
-      <div class="image-wrapper">
-
-<a href="/inktober" class="logo">
-  <img id="blue1"src="artstuff/inktober-button.png" alt="top-image" width="250px">
-  </a>
-  <img id="blue2"src="artstuff/painiting-button.png" alt="background image" width="240px">
-  <a href="/work" class="logo">
-  <img id="blue3"src="artstuff/doodle-button.png" alt="background image" width="240px"></a>
-</div>
-
-  </slot>
-</div> </div>
-
-<img src="yellowsun.png" class="spin" alt="Rotating Image" width="200px" />
-
-
 <Footer />
-</body>
+
+
+
+
+
+
