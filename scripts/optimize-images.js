@@ -63,7 +63,7 @@ async function optimizeImages() {
         await sharp(inputPath)
           .webp({
             quality: 80,           // Adjust quality (0-100)
-            effort: 6,             // Compression effort (0-6)
+            effort: 4,             // Compression effort (0-6)
             lossless: false        // Set to true for lossless compression
           })
           .toFile(outputPath);
